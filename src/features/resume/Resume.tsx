@@ -1,12 +1,11 @@
 import Footer from "../../ui/Footer";
 import ResumeBio from "./ResumeBio";
-
 import ResumeList from "./ResumeList";
 
 function Resume() {
   return (
     <>
-      <div className="lg:absolute lg:right-18 lg:w-[51%] lg:top-36 bottom-0 max-w-[740px] lg:mr-5 z-[100]">
+      <div className="lg:absolute lg:right-18 lg:w-[51%] lg:top-36 bottom-0 max-w-185 lg:mr-5 z-100">
         <ResumeBio />
         <ul className="flex flex-col gap-4">
           <ResumeList />

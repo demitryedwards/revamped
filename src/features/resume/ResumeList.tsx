@@ -10,7 +10,12 @@ function ResumeList() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState<string | null>(null);
 
-  const loadingArr = ["projects", "experience before tech", "education"];
+  const loadingArr = [
+    "projects",
+    "experience before tech",
+    "education",
+    "volunteering",
+  ];
 
   useEffect(() => {
     async function getData() {
@@ -39,7 +44,7 @@ function ResumeList() {
             key={`${section} ${1}`}
             className="flex flex-col scroll-m-24 gap-2 mt-5"
           >
-            <h2 className="capitalize tracking-wider font-stretch-expanded text-lg px-8 mb-5 dark:font-[400] font-bold">
+            <h2 className="capitalize tracking-wider font-stretch-expanded text-lg px-8 mb-5 dark:font-normal font-bold">
               {section}
             </h2>
             <Loader />
