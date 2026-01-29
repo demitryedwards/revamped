@@ -6,6 +6,7 @@ function SidebarNavList() {
     { name: "projects" },
     { name: "experience before tech" },
     { name: "education" },
+    { name: "volunteering" },
   ];
   return (
     <nav>
